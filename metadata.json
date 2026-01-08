@@ -1,0 +1,8 @@
+{
+  "name": "大阪旅行",
+  "description": "A warm, stationery-style group travel planner inspired by Animal Crossing and Japanese journals.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

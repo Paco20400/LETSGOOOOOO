@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>大阪旅行手帳</title>
+  
+  <!-- PWA 全螢幕設定 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="大阪旅行">
+  <link rel="apple-touch-icon" href="https://api.dicebear.com/7.x/pixel-art/svg?seed=rabbit&backgroundColor=b6e3f4">
+  <link rel="manifest" href="/manifest.json">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'island-bg': '#F7F4EB',
+            'island-green': '#A8B58E',
+            'island-sage': '#CBD5C0',
+            'island-brown': '#8D7B68',
+            'island-accent': '#EAB308',
+          },
+          fontFamily: { sans: ['Quicksand', 'Kosugi Maru', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    :root { --safe-top: env(safe-area-inset-top); --safe-bottom: env(safe-area-inset-bottom); }
+    body { 
+      background-color: #F7F4EB; 
+      background-image: radial-gradient(#E0E5D5 1px, transparent 1px); 
+      background-size: 24px 24px; 
+      overscroll-behavior-y: none; 
+      -webkit-user-select: none;
+    }
+    #root { min-height: 100vh; display: flex; flex-direction: column; }
+  </style>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+      "react": "https://esm.sh/react@^19.2.3",
+      "react/": "https://esm.sh/react@^19.2.3/",
+      "firebase/": "https://esm.sh/firebase@^12.7.0/",
+      "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+    }
+  }
+  </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="font-sans text-island-brown">
+  <div id="root"></div>
+  <script type="text/babel" data-type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

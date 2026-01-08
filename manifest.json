@@ -1,0 +1,21 @@
+{
+  "name": "Komorebi Travel",
+  "short_name": "大阪旅行",
+  "description": "暖心感森系旅遊手帳",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F4EB",
+  "theme_color": "#A8B58E",
+  "icons": [
+    {
+      "src": "https://api.dicebear.com/7.x/pixel-art/svg?seed=rabbit&backgroundColor=b6e3f4",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "https://api.dicebear.com/7.x/pixel-art/svg?seed=rabbit&backgroundColor=b6e3f4",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
